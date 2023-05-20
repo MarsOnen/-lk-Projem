@@ -1,0 +1,40 @@
+import SwiftUI
+
+struct bulut: View{
+    var body: some View{
+        ZStack{
+            HStack{
+                Circle()
+                    .frame(width: 80.0, height: 80.0)
+                    .blur(radius:20.0)
+                Circle()
+                    .frame(width: 80.0, height: 80.0)
+                    .blur(radius:20.0)
+            } 
+            .padding(.bottom, 35.0)
+            HStack{
+                Circle()
+                    .frame(width: 80.0, height: 80.0)
+                    .blur(radius:20.0)
+                Circle()
+                    .frame(width: 80.0, height: 80.0)
+                    .blur(radius:20.0)
+                Circle()
+                    .frame(width: 80.0, height: 80.0)
+                    .blur(radius:20.0)
+            }
+        }
+    }
+}
+
+
+
+struct cimen: View{
+    var body: some View{
+        RoundedRectangle(cornerRadius: 20)
+            .frame(width: 1000.0, height:300.0)
+            .foregroundColor(.green)
+    }
+    }
+
+
