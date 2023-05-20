@@ -32,9 +32,48 @@ struct bulut: View{
 struct cimen: View{
     var body: some View{
         RoundedRectangle(cornerRadius: 20)
-            .frame(width: 1000.0, height:300.0)
+            .frame(width: 1000.0, height:500.0)
             .foregroundColor(.green)
     }
     }
 
+struct mountain: View{
+    var body: some View{
+        RoundedRectangle(cornerRadius:0.0)
+            .frame(width: 500, height: 500)
+            .foregroundColor(.brown)
+            .rotationEffect(.degrees(45))
+            .padding(.bottom, 500.0)
+    }
+}
 
+struct cati: View{
+    var body: some View{
+        RoundedRectangle(cornerRadius:0.0)
+            .frame(width: 80, height: 80)
+            .foregroundColor(.red)
+            .rotationEffect(.degrees(45))
+            .padding(.bottom, 100)
+    }
+}
+
+struct ev: View{
+    var body: some View{
+        ZStack{
+            cati()
+            RoundedRectangle(cornerRadius: 00)
+                .frame(width: 100.0, height:90.0)
+                .foregroundColor(.white)
+            Rectangle()
+                .frame(width:30, height: 60)
+                .foregroundColor(.black)
+                .padding(.leading, 50)
+                .padding(.top, 30)
+            Rectangle()
+                .frame(width:30, height: 30)
+                .foregroundColor(.blue)
+                .padding(.trailing, 35)
+
+        }
+    }
+    }
