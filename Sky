@@ -1,0 +1,29 @@
+import SwiftUI
+
+
+struct Sky: View {
+    var body: some View{
+        VStack{
+            HStack{
+                Circle()
+                    .padding(.leading)
+                    .frame(width: 150.0, height: 150.0)
+                    .foregroundColor(.yellow)
+                Spacer()
+            }//burdan yukarı değiştirme
+            
+            
+        Spacer()
+            bulut()
+            bulut()
+            .padding(.bottom, 800.0)
+            .padding(.trailing, 400.0)
+            
+        cimen()
+            
+        }
+           .background(.blue)
+
+        
+    }
+    }
