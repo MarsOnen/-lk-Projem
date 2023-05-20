@@ -2,28 +2,38 @@ import SwiftUI
 
 
 struct Sky: View {
+    @State var gecis = false
     var body: some View{
-        VStack{
-            HStack{
-                Circle()
-                    .padding(.leading)
-                    .frame(width: 150.0, height: 150.0)
-                    .foregroundColor(.yellow)
-                Spacer()
-            }//burdan yukarı değiştirme
+        NavigationView {
             
-            
-        Spacer()
-            bulut()
-            bulut()
-            .padding(.bottom, 800.0)
-            .padding(.trailing, 400.0)
-            
-        cimen()
-            
+            VStack{
+                HStack{
+                    Circle()
+                        .padding(.leading)
+                        .frame(width: 150.0, height: 150.0)
+                        .foregroundColor(.yellow)
+                    Spacer()
+                }//burdan yukarı değiştirme
+                
+                
+                //Spacer()
+                bulut()
+                    .padding(.leading, 350)
+                bulut()
+                // .padding(.bottom, 00.0)
+                    .padding(.trailing, 400.0)
+                //Spacer()
+                ZStack{
+                    mountain()
+                    cimen()
+                    NavigationLink(destination: evici()) { ev() }
+                    
+                }
+                .padding(.top, 200)
+                
+            }
+            .background(.blue)
+            .padding(.top, 300)
         }
-           .background(.blue)
-
-        
     }
     }
