@@ -1,0 +1,83 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            HStack{
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+        }        
+        
+        HStack{
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 100.0, height: 100.0)
+                .foregroundColor(.yellow)
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 100.0, height: 100.0)
+                .foregroundColor(.yellow)
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 100.0, height: 100.0)
+                .foregroundColor(.yellow)
+            
+        }
+            HStack{
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                
+            }
+            HStack{
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                   
+                
+            }
+            HStack{
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frameColor.mint(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                
+            }
+            HStack{
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 100.0, height: 100.0)
+                    .foregroundColor(.yellow)
+                
+            }
+      }
+    }
+}
+
+
