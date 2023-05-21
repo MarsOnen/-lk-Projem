@@ -1,39 +1,86 @@
+//
+//  Sky.swift
+//  mars'ın projesi
+//
+//  Created by Irmak Atılgan on 21.05.2023.
+//
+
 import SwiftUI
 
 
 struct Sky: View {
     @State var gecis = false
+     @State var gece = false
+    @State var gokyuzu = Color.blue
+    @State var gunrenk = Color.yellow
+    @State var cimrenk = Color.green
+   
+    func colorswitch() {
+        if gece == true {
+            gokyuzu = Color.indigo
+            gunrenk = Color.white
+            cimrenk = Color.gray
+        } else {
+            gokyuzu = Color.blue
+            gunrenk = Color.yellow
+            cimrenk = Color.green
+        }
+    }
+    
     var body: some View{
+        
         NavigationView {
-            
             VStack{
                 HStack{
-                    Circle()
-                        .padding(.leading)
-                        .frame(width: 150.0, height: 150.0)
-                        .foregroundColor(.yellow)
+                    Button(action: {
+                        gece.toggle()
+                        colorswitch()
+                    }) {
+                        Text("")
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.black)
+                            .background(gunrenk)
+                            .clipShape(Circle())
+                            .padding(.trailing, 140)
+                            .blur(radius: 5)
+                    }
+                    
                     Spacer()
                 }//burdan yukarı değiştirme
                 
                 
                 //Spacer()
                 bulut()
-                    .padding(.leading, 350)
+                    .padding(.leading, 100)
                 bulut()
                 // .padding(.bottom, 00.0)
-                    .padding(.trailing, 400.0)
+                    .padding(.trailing, 150.0)
                 //Spacer()
                 ZStack{
                     mountain()
                     cimen()
                     NavigationLink(destination: evici()) { ev() }
+                    ev()
+                        .padding(.leading, 300)
+                        .padding(.bottom, 100)
+                        .shadow(color: .black/*@END_MENU_TOKEN@*/, radius: 50, x: /*@START_MENU_TOKEN@*/0.0, y: 75.0)
                     
                 }
-                .padding(.top, 200)
+                //   .padding(.top, 200)
                 
             }
-            .background(.blue)
-            .padding(.top, 300)
+            .background(gokyuzu)
+            .padding(.top, 200)
         }
     }
     }
+  
+
+
+
+
+struct Sky_Previews: PreviewProvider {
+    static var previews: some View {
+        Sky()
+    }
+}
