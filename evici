@@ -1,0 +1,42 @@
+//
+//  evici.swift
+//  mars'ın projesi
+//
+//  Created by Irmak Atılgan on 21.05.2023.
+//
+
+import SwiftUI
+//alttaki variable!larda sorun çıktı
+@Binding var gece: Bool
+@State var pencere = Color.blue
+
+func windowswitch() {
+    if gece == true {
+        pencere = Color.indigo
+
+    } else {
+        pencere = Color.blue
+    }
+}
+struct evici: View{
+    var body: some View{
+        VStack{
+            ZStack{
+            Rectangle()
+                .foregroundColor(.white)
+                Rectangle()
+                    .foregroundColor(pencere)
+                    .frame(width: 200, height: 200)
+            }
+            Rectangle()
+                .foregroundColor(.brown)
+        }
+    }
+}
+
+
+struct evici_Previews: PreviewProvider {
+    static var previews: some View {
+        evici()
+    }
+}
