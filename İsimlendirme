@@ -1,3 +1,10 @@
+//
+//  isimlendirme.swift
+//  mars'ın projesi
+//
+//  Created by Irmak Atılgan on 21.05.2023.
+//
+
 import SwiftUI
 
 struct bulut: View{
@@ -5,25 +12,26 @@ struct bulut: View{
         ZStack{
             HStack{
                 Circle()
-                    .frame(width: 80.0, height: 80.0)
+                    .frame(width: 50.0, height: 50.0)
                     .blur(radius:20.0)
                 Circle()
-                    .frame(width: 80.0, height: 80.0)
+                    .frame(width: 50.0, height: 50.0)
                     .blur(radius:20.0)
-            } 
+            }
             .padding(.bottom, 35.0)
             HStack{
                 Circle()
-                    .frame(width: 80.0, height: 80.0)
+                    .frame(width: 50.0, height: 50.0)
                     .blur(radius:20.0)
                 Circle()
-                    .frame(width: 80.0, height: 80.0)
+                    .frame(width: 50.0, height: 50.0)
                     .blur(radius:20.0)
                 Circle()
-                    .frame(width: 80.0, height: 80.0)
+                    .frame(width: 50.0, height: 50.0)
                     .blur(radius:20.0)
             }
         }
+        .foregroundColor(.white)
     }
 }
 
@@ -31,8 +39,8 @@ struct bulut: View{
 
 struct cimen: View{
     var body: some View{
-        RoundedRectangle(cornerRadius: 20)
-            .frame(width: 1000.0, height:500.0)
+        RoundedRectangle(cornerRadius: 0)
+            .frame(width: .infinity, height:500.0)
             .foregroundColor(.green)
     }
     }
@@ -40,7 +48,7 @@ struct cimen: View{
 struct mountain: View{
     var body: some View{
         RoundedRectangle(cornerRadius:0.0)
-            .frame(width: 500, height: 500)
+            .frame(width: 200, height: 200)
             .foregroundColor(.brown)
             .rotationEffect(.degrees(45))
             .padding(.bottom, 500.0)
@@ -76,4 +84,56 @@ struct ev: View{
 
         }
     }
+    }
+
+struct gunes: View {
+    var body: some View{
+        Circle()
+            .padding(.leading)
+            .frame(width: 150.0, height: 150.0)
+            .foregroundColor(.yellow)
+    }
+}
+
+
+    
+/*
+struct ev: View{
+    var body: some View{
+        ZStack{
+            HStack{
+                cati()
+                 RoundedRectangle(cornerRadius: 00)
+                    .padding(.bottom, 35.0)
+                HStack{
+                    Rectangle()
+                        .frame(width: 100.0, height: 90.0)
+                     .foregroundColor(.white)
+                    Rectangle()
+                        .frame(width: 30.0, height: 60.0)
+                        .foregroundColor(.black)
+                        .padding(.leading, 50)
+                        .padding(.top, 30)
+                    Rectangle()
+                        .frame(width: 30.0, height: 30.0)
+                        .foregroundColor(.blue)
+                        .padding(.trailing, 35)
+
+                }
+
+    }
+ }
+}
+}
+*/
+
+
+struct ay: View{
+    var body: some View{
+        Circle()
+            .padding(.leading)
+            .frame(width: 150.0, height: 150.0)
+            .foregroundColor(.white)
+      }
+    
     }
